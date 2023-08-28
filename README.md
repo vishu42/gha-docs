@@ -4,11 +4,17 @@ gha-docs is a command-line tool that generates a README.md file for your GitHub 
 
 To use gha-docs, simply run the following command in your terminal:
 
-```bash
-gha-docs [path_to_action.yml]
-```
+```text
+gha-docs is a cli tool to generate documentation for github actions
 
-Replace [path_to_action.yml] with the path to your action.yml file. If you don't provide a path, gha-docs will look for an action.yml file in the current directory.
+Usage:
+  gha-docs [flags]
+
+Flags:
+  -f, --action-yaml string   action file name (default "action.yml")
+  -d, --debug                enable debug mode
+  -h, --help                 help for gha-docs
+```
 
 Once you run the command, gha-docs will generate a README.md file in the same directory as your action.yml file. The README.md file will be populated with the following information:
 
@@ -17,4 +23,3 @@ The inputs and outputs of the action, including their descriptions and default v
 This makes it easy for users of your GitHub Action to understand what your action does and how to use it.
 
 Overall, gha-docs is a simple and effective tool for creating well-documented GitHub Actions.
-
