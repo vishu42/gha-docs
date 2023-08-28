@@ -58,9 +58,6 @@ func RunRoot(cmd *cobra.Command, args []string, o *RootOpts) {
 		panic(err)
 	}
 
-	// print content
-	println(content)
-
 	action.Documentation = content
 
 	// parse yaml file into action struct
